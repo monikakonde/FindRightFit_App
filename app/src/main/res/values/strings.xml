@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">FindRightFit</string>
+    <string name="discovered_virtual_assistants">Discovered Virtual Assistants\n            From Find Right Fit</string>
+    <string name="we_care_we_take">We care, we take a personalized approach to each\ncustomer, and our management team is never more \n                    than a phone call or email away</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="hello_again">Hello Again!</string>
+    <string name="welcome_back">Welcome back you\'ve\n        been missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_">Login</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="don_t_have_account"><font color='#232323' size='15'>Don\'t have account?</font> <font color='#6B9773' size='15'>Register here</font></string>
+    <string name="already_have_account"><font color='#232323' size='15'>Already have a Account ?</font> <font color='#6B9773' size='15'>Login</font></string>
+    <string name="phone">Phone</string>
+    <string name="business_name">Business name</string>
+    <string name="Hello_Sumit">Hello Sumit</string>
+    <string name="welcome_to_virtual_assistants">Welcome to Virtual Assistants\n From Find Right Fit</string>
+    <string name="search_services">Search Services</string>
+    <string name="executive_admin">Executive\nAdmin</string>
+    <string name="marketing_social_media">Marketing \nsocial Media</string>
+    <string name="project_management">Project Management</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="design_services">Design \nServices</string>
+    <string name="book_keeping">Book Keeping</string>
+    <string name="writing_and_editing">Writing and \nEditing</string>
+    <string name="multilingual_services">Multilingual Services</string>
+    <string name="request_a_consultation">Request a Consultation</string>
+    <string name="c_level_">C-level assistance for busy executives.</string>
+    <string name="for_more_than_a_decade">For more than a decade, Find Right Fit has been a\nleading legal virtual assistant provider. Our team has\ngained considerable expertise and experience servicing \nthe legal sector worldwide over the years. In order to \nhire only the most qualified virtual legal assistants, we\nhave identified and implemented streamlined processes.</string>
+    <string name="executive_admin_">Executive Admin</string>
+    <string name="c_level">C-level assistance for busy\nexecutives.</string>
+    <string name="btn_executive_admin">Executive Admin</string>
+    <string name="btn_marketing_social_media">Marketing Social Media</string>
+    <string name="executive_admin_detail">Executive Admin Detail</string>
+    <string name="section">Section</string>
+    <string name="research">Research</string>
+    <string name="diary_management">Diary management</string>
+    <string name="call_screening">Call screening</string>
+    <string name="to_do_list">To do list</string>
+    <string name="word_processing">Word processing</string>
+    <string name="marketing_social_media_">Marketing Social Media</string>
+    <string name="get_more_exposure_for_your_brand">Get more exposure for your brand.</string>
+    <string name="marketing_social_media_detail">Marketing Social Media Detail</string>
+    <string name="virtual_assistants_are">virtual assistants are increasingly meeting the need to accelerate time-to-market, save costs, and provide rapid solutions to the expanding social media stretch. Also, most of the businesses spend limited time on social media, but hardly a few gets the desired result.</string>
+    <string name="marketing_social_">Marketing Social Media</string>
+    <string name="project_management_">Project Management</string>
+    <string name="tell_us_what">Tell us what you need so you can\nmeet your virtual assistant.</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="for_my_business">For My Business</string>
+    <string name="first_name">First Name</string>
+    <string name="email_">Email</string>
+    <string name="first_name_">First Name</string>
+    <string name="company">Company</string>
+    <string name="i_agree_that_my_submitted">I agree that my submitted data is being collected and stored.</string>
+    <string name="last_name">Last Name</string>
+    <string name="submit">Submit</string>
+
+</resources>

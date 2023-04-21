@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_bg"
+    tools:context=".ContactDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen28"
+        android:layout_marginTop="@dimen/dimen40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContactDetail"
+        style="@style/executive_admin_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen90"
+        android:layout_marginTop="@dimen/dimen40"
+        android:text="@string/contact_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTellUsWhat"
+        style="@style/c_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen90"
+        android:layout_marginTop="@dimen/dimen8"
+        android:text="@string/tell_us_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactDetail" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CL_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen140"
+        android:background="@drawable/bg_curve_off_white_46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTellUsWhat">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIL_ForMyBusiness"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen44"
+            android:layout_marginHorizontal="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen50"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen6"
+            app:boxCornerRadiusBottomStart="@dimen/dimen6"
+            app:boxCornerRadiusTopEnd="@dimen/dimen6"
+            app:boxCornerRadiusTopStart="@dimen/dimen6"
+            app:boxStrokeColor="@color/gray_border"
+            app:layout_constraintTop_toTopOf="@+id/CL_Bottom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etForMyBusiness"
+                style="@style/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:hint="@string/for_my_business"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIL_Company"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen44"
+            android:layout_marginHorizontal="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen20"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen6"
+            app:boxCornerRadiusBottomStart="@dimen/dimen6"
+            app:boxCornerRadiusTopEnd="@dimen/dimen6"
+            app:boxCornerRadiusTopStart="@dimen/dimen6"
+            app:boxStrokeColor="@color/gray_border"
+            app:layout_constraintTop_toBottomOf="@+id/TIL_ForMyBusiness">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/company"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIL_FirstName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen44"
+            android:layout_marginHorizontal="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen20"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen6"
+            app:boxCornerRadiusBottomStart="@dimen/dimen6"
+            app:boxCornerRadiusTopEnd="@dimen/dimen6"
+            app:boxCornerRadiusTopStart="@dimen/dimen6"
+            app:boxStrokeColor="@color/gray_border"
+            app:layout_constraintTop_toBottomOf="@+id/TIL_Company">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/first_name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIL_LastName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen44"
+            android:layout_marginHorizontal="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen20"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen6"
+            app:boxCornerRadiusBottomStart="@dimen/dimen6"
+            app:boxCornerRadiusTopEnd="@dimen/dimen6"
+            app:boxCornerRadiusTopStart="@dimen/dimen6"
+            app:boxStrokeColor="@color/gray_border"
+            app:layout_constraintTop_toBottomOf="@+id/TIL_FirstName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/last_name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIL_Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen44"
+            android:layout_marginHorizontal="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen20"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen6"
+            app:boxCornerRadiusBottomStart="@dimen/dimen6"
+            app:boxCornerRadiusTopEnd="@dimen/dimen6"
+            app:boxCornerRadiusTopStart="@dimen/dimen6"
+            app:boxStrokeColor="@color/gray_border"
+            app:layout_constraintTop_toBottomOf="@+id/TIL_LastName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email_"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen28"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/TIL_Email">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen30" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvIAgreeThatMy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen8"
+                android:layout_marginTop="@dimen/dimen30"
+                android:text="@string/i_agree_that_my_submitted" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/btn_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen30"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/btn_curve_green_8"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    app:layout_constraintTop_toBottomOf="@id/LinearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

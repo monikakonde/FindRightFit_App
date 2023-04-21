@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterScreenActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_logo_login" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:layout_width="356dp"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen70"
+        android:background="@drawable/bg_curve_white_8"
+        android:elevation="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/dimen25"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
+        android:layout_width="356dp"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen20"
+        android:background="@drawable/bg_curve_white_8"
+        android:elevation="4dp"
+        android:paddingStart="@dimen/dimen25"
+        android:text="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPhone"
+        android:layout_width="356dp"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen20"
+        android:background="@drawable/bg_curve_white_8"
+        android:elevation="4dp"
+        android:inputType="phone"
+        android:paddingStart="@dimen/dimen25"
+        android:text="@string/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etBusinessName"
+        android:layout_width="356dp"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen20"
+        android:background="@drawable/bg_curve_white_8"
+        android:elevation="4dp"
+        android:inputType="text"
+        android:paddingStart="@dimen/dimen25"
+        android:text="@string/business_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        style="@style/register"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen50"
+        android:background="@drawable/btn_curve_green_8"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBusinessName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrContinueWith"
+        style="@style/or_continue_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:text="@string/or_continue_with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="@dimen/dimen20"
+        android:src="@drawable/img_google"
+        app:layout_constraintEnd_toStartOf="@+id/ivLinkedin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrContinueWith" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLinkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen20"
+        android:src="@drawable/img_linkedin"
+        app:layout_constraintEnd_toStartOf="@id/ivFacebook"
+        app:layout_constraintStart_toEndOf="@+id/ivGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrContinueWith" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginEnd="136dp"
+        android:src="@drawable/img_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivLinkedin"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrContinueWith" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAlreadyHaveAccount"
+        style="@style/already_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:text="@string/already_have_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLinkedin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
